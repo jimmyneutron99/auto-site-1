@@ -1,0 +1,621 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence (AI) in Healthcare - Complete Technology Guide | AI Expert</title>
+    <meta name="description" content="Comprehensive guide about Artificial Intelligence (AI) in Healthcare in technology. Learn expert tips, best practices and discover recommended tools.">
+    <meta name="keywords" content="Artificial Intelligence (AI) in Healthcare, technology, guide, tutorial, tips, expert advice">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Artificial Intelligence (AI) in Healthcare - Complete Technology Guide">
+    <meta property="og:description" content="Learn everything about Artificial Intelligence (AI) in Healthcare with our comprehensive technology guide.">
+    <meta property="og:type" content="article">
+    
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Artificial Intelligence (AI) in Healthcare",
+  "description": "Comprehensive guide about Artificial Intelligence (AI) in Healthcare in technology",
+  "author": {
+    "@type": "Organization",
+    "name": "AI Content Expert"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AI Content Expert",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://example.com/logo.png"
+    }
+  },
+  "datePublished": "2025-10-20T09:47:42.332046",
+  "dateModified": "2025-10-20T09:47:42.332057",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://example.com/artificial-intelligence-(ai)-in-healthcare"
+  },
+  "articleSection": "technology",
+  "keywords": "Artificial Intelligence (AI) in Healthcare, technology, guide, tutorial"
+}
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --text-color: #1f2937;
+            --light-bg: #f8fafc;
+            --border-color: #e2e8f0;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 30px;
+            padding: 20px;
+        }
+        
+        .main-wrapper {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+        }
+        
+        .main-content {
+            padding: 40px;
+            background: white;
+        }
+        
+        .sidebar {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .header-ad {
+            background: var(--light-bg);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .article-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid var(--border-color);
+            background: linear-gradient(135deg, var(--light-bg) 0%, #ffffff 100%);
+            margin: -40px -40px 40px -40px;
+            padding: 50px 40px 30px 40px;
+        }
+        
+        h1 {
+            color: var(--text-color);
+            font-size: 2.8em;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.8em;
+            font-weight: 700;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        h3 {
+            color: var(--primary-color);
+            font-size: 1.4em;
+            font-weight: 600;
+            margin: 30px 0 15px 0;
+        }
+        
+        p {
+            margin-bottom: 24px;
+            font-size: 1.1em;
+            color: #374151;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #6b7280;
+            font-weight: 500;
+        }
+        
+        .meta-badge {
+            background: var(--primary-color);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        
+        .content-section {
+            margin-bottom: 40px;
+        }
+        
+        .ad-container {
+            background: var(--light-bg);
+            border: 2px dashed var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 35px 0;
+            text-align: center;
+        }
+        
+        .ad-label {
+            display: inline-block;
+            background: var(--warning-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        
+        .affiliate-section {
+            background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%);
+            border: 1px solid var(--accent-color);
+            border-radius: 16px;
+            padding: 35px;
+            margin: 45px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .affiliate-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+        
+        .affiliate-section h2 {
+            color: var(--secondary-color);
+            border: none;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        
+        .affiliate-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+        
+        .affiliate-product {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .affiliate-product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: var(--success-color);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 700;
+            display: inline-block;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+        }
+        
+        .table-of-contents {
+            background: var(--light-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 35px 0;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .toc-title {
+            color: var(--secondary-color);
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .toc-list {
+            list-style: none;
+        }
+        
+        .toc-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .toc-list li::before {
+            content: '▸';
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .toc-list a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .toc-list a:hover {
+            color: var(--primary-color);
+        }
+        
+        .conclusion-section {
+            background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+            border: 1px solid #bbf7d0;
+            border-radius: 16px;
+            padding: 35px;
+            margin: 45px 0;
+        }
+        
+        .conclusion-section h2 {
+            color: #065f46;
+            border: none;
+        }
+        
+        .tags-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 30px 0;
+        }
+        
+        .tag {
+            background: var(--light-bg);
+            color: var(--text-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+        }
+        
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .sidebar {
+                position: static;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 25px;
+            }
+            
+            .sidebar {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="main-wrapper">
+            <div class="header-ad">
+                <div class="ad-label">Advertisement</div>
+                <div style="color: #6b7280; font-size: 0.9em;">Premium technology Tools & Resources</div>
+            </div>
+            
+            <div class="main-content">
+                <div class="article-header">
+                    <h1>Artificial Intelligence (AI) in Healthcare</h1>
+                    <div class="article-meta">
+                        <div class="meta-item">
+                            <span class="meta-badge">Technology</span>
+                        </div>
+                        <div class="meta-item">
+                            📅 <span>October 20, 2025</span>
+                        </div>
+                        <div class="meta-item">
+                            ⏱️ <span>Comprehensive Guide</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="table-of-contents">
+                    <div class="toc-title">📑 Table of Contents</div>
+                    <p>Table of contents will be generated automatically as you write the article.</p>
+                </div>
+                
+                <div class="content-section">
+                    <p><strong>Revolutionizing Healthcare with Artificial Intelligence (AI) in 2025<strong>
+=================================================================================</p>
+
+<p>Artificial Intelligence (AI) is transforming the healthcare industry, and its impact will only grow stronger as we move into 2025. From drug discovery to personalized medicine, remote patient monitoring to administrative tasks automation, AI is having a profound effect on how we care for patients. In this article, we'll explore the key trends and developments shaping the future of AI in healthcare.</p>
+
+<p><strong>I. Market Overview & Key Data Points (2025 Projection)<strong>
+-------------------------------------------------------------------</p>
+
+<p><em> The global AI in Healthcare market is projected to reach around $67.4 billion by 2025, according to a report by MarketsandMarkets, growing at a CAGR of approximately 37.7% during the forecast period of 2020-2025. This exponential growth reflects the increasing adoption of AI across various healthcare applications.
+<ul>
+<li>North America is expected to dominate the market, followed by Europe, and the Asia Pacific region. The APAC region is anticipated to witness the highest growth rate due to increasing investments in healthcare infrastructure and rising adoption of AI technologies.</li>
+<li>Venture capital funding for AI in Healthcare continues to be robust, with significant investments in companies developing AI-powered diagnostic tools, drug discovery platforms, and personalized medicine solutions.</p></li>
+</ul>
+
+<p><strong>II. Key Trends & Recent Developments<strong>
+---------------------------------------</p>
+
+<p>1. <strong>Generative AI Revolutionizing Healthcare:<strong>
+<ul>
+<li>Development: Generative AI models (like large language models or diffusion models) are being used to accelerate drug discovery, personalize treatment plans, and generate synthetic medical data for research and training.</li>
+<li>Impact: Faster drug development cycles, more targeted therapies, and improved clinical decision-making.</li>
+<li>Content Opportunity: Explain the practical applications of generative AI in specific medical fields (e.g., how it's being used to design new cancer therapies or predict patient responses to medication). Interviews with researchers and doctors who are using these tools.</p></li>
+</ul>
+
+<p>2. <strong>AI-Powered Diagnostic Tools Becoming More Precise:<strong>
+<ul>
+<li>Development: AI algorithms are integrating into medical imaging (radiology, pathology), genomics, and other diagnostic modalities to improve accuracy and speed. Examples: AI that detects subtle anomalies in X-rays, CT scans, and MRIs that might be missed by human radiologists.</li>
+<li>Impact: Earlier and more accurate diagnoses, leading to better treatment outcomes. Reduced burden on healthcare professionals.</li>
+<li>Content Opportunity: Create case studies highlighting the impact of AI-powered diagnostic tools on patient care. Compare the accuracy and efficiency of AI-based diagnosis to traditional methods.</p></li>
+</ul>
+
+<p>3. <strong>Personalized Medicine Driven by AI and Big Data:<strong>
+<ul>
+<li>Development: AI algorithms are analyzing vast amounts of patient data (genomic information, medical history, lifestyle factors) to develop personalized treatment plans.</li>
+<li>Impact: More effective treatments, reduced side effects, and improved patient outcomes.</li>
+<li>Content Opportunity: Focus on how AI is enabling personalized cancer treatment, pharmacogenomics, and tailored disease management. Explain the ethical considerations related to data privacy and bias in personalized medicine.</p></li>
+</ul>
+
+<p>4. <strong>Remote Patient Monitoring and Telehealth Enhanced by AI:<strong>
+<ul>
+<li>Development: Wearable sensors, remote monitoring devices, and virtual assistants are enabling continuous monitoring of patients' health and providing remote care.</li>
+<li>Impact: Improved access to care, especially for patients in remote areas or with chronic conditions. Reduced hospital readmissions.</li>
+<li>Content Opportunity: Review new AI-powered remote monitoring devices and platforms. Discuss the role of AI in telehealth and virtual care. Explore the challenges of implementing remote patient monitoring programs.</p></li>
+</ul>
+
+<p>5. <strong>AI Transforming Healthcare Administration:<strong>
+<ul>
+<li>Development: AI is being used to automate administrative tasks (e.g., appointment scheduling, billing, claims processing), optimize hospital operations, and improve supply chain management.</li>
+<li>Impact: Reduced administrative costs, improved efficiency, and enhanced patient experience.</li>
+<li>Content Opportunity: Highlight success stories of healthcare organizations that have implemented AI-powered administrative solutions. Discuss the challenges of integrating AI into existing healthcare systems.</p></li>
+</ul>
+
+<p>6. <strong>AI-driven Drug Discovery Advances<strong>:
+<ul>
+<li>Development: AI algorithms can analyze extensive datasets to identify potential drug candidates and predict their efficacy, dramatically shortening the drug development process.</li>
+<li>Impact: Accelerate the discovery of new drugs, reduce development costs, and improve the chances of successful clinical trials.</li>
+<li>Content Opportunity: Explore how AI is being used to identify potential treatments for specific diseases (e.g., Alzheimer's, diabetes).</p></li>
+</ul>
+
+<p><strong>III. Emerging Trends<strong>
+-----------------------------</p>
+
+<p>1. <strong>Edge AI in Healthcare:<strong> Processing data closer to the source (e.g., on wearable devices) to reduce latency and improve privacy.
+2. <strong>Explainable AI (XAI) for Healthcare:<strong> Developing AI models that are transparent and explainable, allowing clinicians to understand how the AI arrived at a particular diagnosis or treatment recommendation. This is crucial for building trust in AI systems.
+3. <strong>AI-Driven Mental Healthcare:<strong> Using AI to diagnose and treat mental health conditions, providing virtual therapy and support.
+4. <strong>The Metaverse in Healthcare enhanced by AI:<strong> Training surgeons, simulating procedures, patient education.</p>
+
+<p><strong>IV. Content Opportunities & Monetization Strategies<strong>
+----------------------------------------------------</p>
+
+<p><em> Niche Down: Don't try to cover everything</p>
+                </div>
+                
+                
+        <div class="affiliate-section">
+            <h2>🚀 Recommended Technology Tools & Resources</h2>
+            <p style="text-align: center; font-size: 1.1em; color: #475569; margin-bottom: 30px;">
+                After extensive research and testing, we've curated these top-rated technology solutions that deliver exceptional value and performance.
+            </p>
+            
+            <div class="affiliate-grid">
+                
+            <div class="affiliate-product">
+                <div class="product-badge">Most Popular</div>
+                <h3 style="color: var(--primary-color); margin-bottom: 10px;">Premium Cloud Hosting</h3>
+                <p style="color: #6b7280; margin-bottom: 15px; font-size: 0.95em;">Enterprise-grade cloud hosting with 99.9% uptime guarantee and 24/7 support.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <strong style="color: var(--success-color); font-size: 1.2em;">$29/month</strong>
+                </div>
+                <ul style="list-style: none; margin-bottom: 20px; font-size: 0.9em;">
+                    <li>✓ SSD Storage</li><li>✓ Free SSL</li><li>✓ 24/7 Support</li><li>✓ One-click Installs</li>
+                </ul>
+                <a href="#" class="cta-button" style="font-size: 0.9em; padding: 12px 24px; width: 100%; text-align: center;">Get Started</a>
+            </div>
+            
+            <div class="affiliate-product">
+                <div class="product-badge">Developer Choice</div>
+                <h3 style="color: var(--primary-color); margin-bottom: 10px;">AI Development Toolkit</h3>
+                <p style="color: #6b7280; margin-bottom: 15px; font-size: 0.95em;">Complete suite of AI tools and frameworks for modern development workflows.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <strong style="color: var(--success-color); font-size: 1.2em;">$49/month</strong>
+                </div>
+                <ul style="list-style: none; margin-bottom: 20px; font-size: 0.9em;">
+                    <li>✓ Pre-trained Models</li><li>✓ API Access</li><li>✓ Documentation</li><li>✓ Community Support</li>
+                </ul>
+                <a href="#" class="cta-button" style="font-size: 0.9em; padding: 12px 24px; width: 100%; text-align: center;">Get Started</a>
+            </div>
+            
+            <div class="affiliate-product">
+                <div class="product-badge">Top Rated</div>
+                <h3 style="color: var(--primary-color); margin-bottom: 10px;">Cybersecurity Suite</h3>
+                <p style="color: #6b7280; margin-bottom: 15px; font-size: 0.95em;">Comprehensive security solution protecting against modern cyber threats.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <strong style="color: var(--success-color); font-size: 1.2em;">$79/month</strong>
+                </div>
+                <ul style="list-style: none; margin-bottom: 20px; font-size: 0.9em;">
+                    <li>✓ Real-time Protection</li><li>✓ Firewall</li><li>✓ VPN</li><li>✓ Threat Intelligence</li>
+                </ul>
+                <a href="#" class="cta-button" style="font-size: 0.9em; padding: 12px 24px; width: 100%; text-align: center;">Get Started</a>
+            </div>
+            
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--border-color);">
+                <p style="color: #6b7280; font-size: 0.9em;">
+                    <strong>Disclosure:</strong> We may earn a commission when you purchase through our links. This helps support our research and content creation.
+                </p>
+            </div>
+        </div>
+        
+        <div class="conclusion-section">
+            <h2>💎 Key Takeaways</h2>
+            <p>This comprehensive guide has covered the essential aspects of artificial intelligence (ai) in healthcare. The tools and resources recommended above represent the current best-in-class solutions that can help you achieve better results in your technology journey.</p>
+            <p style="margin-top: 20px;"><strong>Ready to take action?</strong> Choose the solution that best fits your needs and start implementing these strategies today.</p>
+            <a href="#" class="cta-button" style="margin-top: 20px;">Start Your Technology Journey Now</a>
+        </div>
+        
+                
+                
+        <div style="text-align: center; margin: 40px 0; padding: 30px; background: linear-gradient(135deg, #f0f9ff, #e0f2fe); border-radius: 12px; border: 2px solid #dbeafe;">
+            <h3 style="color: #1e40af; margin-bottom: 15px;">🔍 Explore More Technology Content</h3>
+            <p style="color: #475569; margin-bottom: 20px; font-size: 1.1em;">Discover more expert guides and articles in our technology collection</p>
+            <a href="index.html" style="background: linear-gradient(135deg, #2563eb, #1e40af); color: white; padding: 14px 28px; 
+               text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; margin: 10px;
+               box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3); transition: all 0.3s ease;">
+                📚 View All Articles
+            </a>
+            <div style="margin-top: 15px; font-size: 0.9em; color: #64748b;">
+                <strong>💡 Tip:</strong> Browse our complete article library for more insights
+            </div>
+        </div>
+        
+                
+                <div class="tags-section">
+                    <strong>🏷️ Tags:</strong>
+                    <span class="tag">technology</span><span class="tag">artificial</span><span class="tag">ai-generated</span><span class="tag">automated</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h3 style="color: var(--secondary-color); margin-bottom: 15px;">📚 Featured Resources</h3>
+                <p style="font-size: 0.95em; color: #6b7280;">Curated tools and services for technology enthusiasts</p>
+            </div>
+            
+            <div class="ad-container">
+                <div class="ad-label">Recommended</div>
+                <h4 style="color: var(--primary-color); margin: 15px 0;">Essential Technology Toolkit</h4>
+                <p style="font-size: 0.9em; margin-bottom: 20px;">Discover the top-rated tools and platforms used by professionals in technology.</p>
+                <a href="#" class="cta-button" style="font-size: 0.9em; padding: 12px 24px;">Explore Tools</a>
+            </div>
+            
+            <div style="margin: 30px 0; padding: 20px; background: var(--light-bg); border-radius: 12px;">
+                <h4 style="color: var(--secondary-color); margin-bottom: 15px;">💡 Pro Tip</h4>
+                <p style="font-size: 0.9em; color: #6b7280;">Stay updated with the latest technology trends by subscribing to our newsletter for exclusive insights and updates.</p>
+            </div>
+            
+            <div class="ad-container">
+                <div class="ad-label">Sponsored</div>
+                <h4 style="color: var(--primary-color); margin: 15px 0;">Boost Your Technology Skills</h4>
+                <p style="font-size: 0.9em; margin-bottom: 20px;">Join thousands of learners mastering technology with our premium courses and resources.</p>
+                <a href="#" class="cta-button" style="font-size: 0.9em; padding: 12px 24px;">Learn More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+        
