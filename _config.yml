@@ -1,3 +1,7 @@
+# Disable Jekyll processing for HTML files
+include:
+  - "*.html"
+  - "assets/**/*"
 title: "AI Technology Insights"
 description: "Latest AI trends, machine learning insights, and artificial intelligence developments"
 baseurl: ""
