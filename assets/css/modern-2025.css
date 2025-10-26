@@ -1329,3 +1329,113 @@ body{
   margin-bottom: 10px;
   font-size: 0.8rem;
 }
+/* Articles Hub Styles */
+.articles-controls {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.filter-btn.active {
+  background: linear-gradient(45deg, var(--neon-purple), var(--neon-blue));
+  color: var(--text-glow);
+}
+
+/* AI Hero Video Styles - Perfect Centering & Scaling */
+.site__video {
+  display: block;
+  margin: 50px auto 0 auto;
+  width: min(77%, 1000px);
+  max-width: 1000px;
+  min-width: 300px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 
+    0 25px 50px rgba(0, 243, 255, 0.25),
+    0 0 100px rgba(138, 58, 255, 0.15);
+  border: 2px solid var(--neon-cyan);
+  object-fit: cover;
+  transition: all 0.5s ease;
+  aspect-ratio: 16/9;
+  background: var(--darker-space);
+  transform-origin: center center;
+}
+
+.site__video:hover {
+  box-shadow: 
+    0 30px 60px rgba(0, 243, 255, 0.4),
+    0 0 120px rgba(138, 58, 255, 0.25);
+  transform: scale(1.01);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 1200px) {
+  .site__video {
+    width: min(85%, 900px);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .site__video {
+    width: min(90%, 800px);
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site__video {
+    width: min(95%, 700px);
+    margin-top: 35px;
+    border-radius: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .site__video {
+    width: 92%;
+    margin-top: 30px;
+    border-radius: 10px;
+    border-width: 1.5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .site__video {
+    width: 94%;
+    margin-top: 25px;
+    border-radius: 8px;
+    min-width: 280px;
+  }
+}
+
+/* Ultra-wide screens */
+@media screen and (min-width: 2000px) {
+  .site__video {
+    width: min(70%, 1200px);
+  }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .site__video {
+    box-shadow: 
+      0 15px 30px rgba(0, 243, 255, 0.3),
+      0 0 60px rgba(138, 58, 255, 0.2);
+  }
+}
