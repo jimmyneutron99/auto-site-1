@@ -1,3 +1,11 @@
+/* Local Over There font */
+@font-face {
+    font-family: 'Over There';
+    src: url('../fonts/Over There.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 /* Import Over There font in CSS */
