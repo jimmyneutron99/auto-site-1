@@ -1,5 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+/* Import Over There font in CSS */
+@import url('https://fonts.cdnfonts.com/css/over-there');
+
+/* Custom Eevoke Logo Styling */
+.eevoke-logo {
+    font-family: 'Over There', 'Inter', sans-serif;
+    font-size: 2.2em;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 15px rgba(0, 243, 255, 0.8);
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Responsive logo sizing */
+@media screen and (max-width: 767px) {
+    .eevoke-logo {
+        font-size: 1.8em;
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .eevoke-logo {
+        font-size: 1.6em;
+        margin-right: 6px;
+    }
+}
 
 /* === AI TECHNOLOGY 2025 THEME === */
 :root {
@@ -1209,4 +1239,29 @@ body{
     width: 100px;
     height: 50px;
   }
+}
+/* Footer logo alignment fix */
+.footer .col-md-2.col-xs-6 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .footer__title {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Contact section logo alignment */
+.contacts__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacts_title-ag {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
 }
